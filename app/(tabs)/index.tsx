@@ -3,6 +3,7 @@ import React from 'react'
 import { ScrollView } from 'react-native-gesture-handler';
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 const index = () => {
   return (
     <View style={styles.container}>
@@ -50,6 +51,100 @@ const index = () => {
         <Text style={styles.title4}>Flash Sale</Text>
         <Text style={styles.title10}>View All</Text> 
       </View>
+      <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}>
+          
+      <View style ={{flexDirection: "row"}}>
+      <View style={styles.KBoxTitle1}>
+           <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/oil.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Minyak Saji 1KG</Text>
+          <Text style={styles.KBtitle2}>220 ml</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 12.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+      <View style={styles.KBoxTitle1}>
+      <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/kopi.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Papparich WhiteCoffee</Text>
+          <Text style={styles.KBtitle2}>20 Sticks</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 15.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+      <View style={styles.KBoxTitle1}>
+      <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/maggie.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Maggie Kari</Text>
+          <Text style={styles.KBtitle2}>6 Packs</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 5.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+          
+      </View>
+          
+      </ScrollView>
+      <View style ={{flexDirection: "row"}}>
+        <Text style={styles.title4}>Frequent Order</Text>
+        <Text style={styles.title10}>View All</Text> 
+      </View>
+      <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}>
+          
+      <View style ={{flexDirection: "row"}}>
+      <View style={styles.KBoxTitle1}>
+           <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/brocoli.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Fresh Broccoli</Text>
+          <Text style={styles.KBtitle2}>0.5 Gram</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 7.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+      <View style={styles.KBoxTitle1}>
+      <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/chicken.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Fresh Chicken</Text>
+          <Text style={styles.KBtitle2}>Whole Chicken</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 25.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+      <View style={styles.KBoxTitle1}>
+      <View style={styles.kotak1}>
+           <Image style={styles.Kimg}
+               source={require("../../assets/images/prawn.png")} />
+          </View>
+          <Text style={styles.KBtitle1}>Fresh Prawns</Text>
+          <Text style={styles.KBtitle2}>1 KG</Text>
+          <View style ={{flexDirection: "row"}}>
+          <Text style={styles.KBtitle1}>RM 35.90</Text>
+          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          </View>
+      </View>
+          
+      </View>
+          
+      </ScrollView>
     </ScrollView>
     </View>
   )
@@ -177,4 +272,36 @@ const styles = StyleSheet.create({
     width: 100,
     marginLeft: 20,
   },
+  kotak1: {
+    height: 190,
+    width: 200,
+    backgroundColor: "#E6E9E5",
+    borderRadius: 20,
+    marginTop: 20,
+    marginLeft: 20,
+    
+  },
+  Kimg:{
+    height:190,
+    width: 200,
+    marginLeft: 2,
+  },
+  KBoxTitle1:{
+   
+  },
+  KBtitle1:{
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginLeft: 20,
+    paddingTop: 15,
+  },
+  KBtitle2:{
+    fontSize: 15,
+    
+    marginLeft: 20,
+    paddingTop: 5,
+  },
+  plus:{
+    marginLeft:80
+  }
 })
