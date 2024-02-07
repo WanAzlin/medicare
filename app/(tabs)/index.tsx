@@ -98,7 +98,7 @@ const index = () => {
       </ScrollView>
       <View style ={{flexDirection: "row"}}>
         <Text style={styles.title4}>Frequent Order</Text>
-        <Text style={styles.title10}>View All</Text> 
+        <Text style={styles.title11}>View All</Text> 
       </View>
       <ScrollView
           horizontal={true}
@@ -240,6 +240,13 @@ const styles = StyleSheet.create({
     paddingTop: 18,
     fontWeight: 'bold',
   },
+  title11: {
+    fontSize: 15,
+    color:"#A09D9C",
+    marginLeft: 190,
+    paddingTop: 18,
+    fontWeight: 'bold',
+  },
   box1: {
     height: 190,
     width: 150,
@@ -252,7 +259,7 @@ const styles = StyleSheet.create({
   box2: {
     height: 190,
     width: 150,
-    backgroundColor: "#77D8ED",
+    backgroundColor: "#E0D0E8",
     borderRadius: 20,
     marginTop: 20,
     marginLeft: 20,
