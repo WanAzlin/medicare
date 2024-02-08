@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View, TextInput, Image } from 'react-native'
+import { StyleSheet, Text, View, TextInput, Image, Pressable } from 'react-native'
 import React from 'react'
 import { ScrollView } from 'react-native-gesture-handler';
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { Link, Tabs } from 'expo-router';
 const index = () => {
   return (
     <View style={styles.container}>
@@ -65,7 +66,14 @@ const index = () => {
           <Text style={styles.KBtitle2}>220 ml</Text>
           <View style ={{flexDirection: "row"}}>
           <Text style={styles.KBtitle1}>RM 12.90</Text>
-          <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+          <Link href="/more" asChild>
+            <Pressable>
+                {({ pressed }) => (
+                        <AntDesign name="pluscircleo" size={35} color="#FF3B00" style={styles.plus}/>
+            )}
+            </Pressable>
+            </Link>
+         
           </View>
       </View>
       <View style={styles.KBoxTitle1}>

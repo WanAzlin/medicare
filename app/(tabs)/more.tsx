@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { Link, Tabs } from 'expo-router';
 const more = () => {
   return (
     <View style={styles.container}>
@@ -36,14 +37,21 @@ const more = () => {
       <View style={styles.box2}>
         <View style ={{flexDirection: "row"}}>
             <Foundation name="minus-circle" size={40} color="#EFAA7C"style={styles.minus} />
-            <Text style={styles.KBtitle6}>0</Text>
+            <Text style={styles.KBtitle6}>1</Text>
             <AntDesign name="pluscircleo" size={28} color="#FF3B00" style={styles.plus} />
         </View>
       </View>
       <View style={styles.box3}>
         <View style ={{flexDirection: "row"}}>
         <MaterialCommunityIcons name="shopping-outline" size={30} color="white" style={styles.cart2}  />
-        <Text style={styles.titleBox3}>Add To Cart</Text>
+        <Link href="/order" asChild>
+            <Pressable>
+                {({ pressed }) => (
+                        <Text style={styles.titleBox3}>Add To Cart</Text>
+            )}
+            </Pressable>
+            </Link>
+        
         </View>
       </View>
     </View>
